@@ -5,7 +5,7 @@ backend for Night club app (test task)
 docker-compose up
 
 SWAGGER:
-[http://localhost:8082/swagger-ui/index.html](url)
+(http://localhost:8082/swagger-ui/index.html)(url)
 
 для проверки
 [localhost:8082/actuator/heatlh](url)
