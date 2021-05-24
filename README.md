@@ -1,8 +1,8 @@
 # nightclub
 backend for Night club app (test task)
 
-Для запуска 
-docker-compose up
+## Для запуска 
+`docker-compose up`
 
 ## SWAGGER:
 [http://localhost:8082/swagger-ui/index.html](url)
