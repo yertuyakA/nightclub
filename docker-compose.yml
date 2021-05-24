@@ -1,0 +1,26 @@
+version: '2'
+
+services:
+  nightapp:
+    image: 'nightapp:latest'
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+    - 8082:8080
+    container_name: nightapp
+    depends_on:
+      - db
+    links:
+      - db
+
+
+  db:
+    image: 'aibekdocker/pg:12'
+    ports:
+    - 5437:5432
+    container_name: db
+    environment:
+      - POSTGRES_USER=n_admin
+      - POSTGRES_PASSWORD=admin
+      - POSTGRES_DB=night_club
